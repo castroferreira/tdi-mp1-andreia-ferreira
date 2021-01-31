@@ -1,0 +1,35 @@
+@import "./geral.css";
+
+.logo {
+    height: 30px;
+    width: auto;
+}
+
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1000px) / 2);
+    z-index: 10;
+}
+
+.navLink{
+    color: #dba90d;
+}
+.navLink :hover {
+    color: white !important;
+}
+
+/* Mobile version */
+  
+@media screen and (max-width: 600px) {
+    .logo{
+        margin-left: 20px;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-left: 20px;
+    }
+} 

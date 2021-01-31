@@ -1,0 +1,13 @@
+export { default as Home } from './Home';
+export { default as Films } from './Films';
+export { default as FilmsById } from './Films/FilmsById';
+export { default as People } from './People';
+export { default as PeopleById } from './People/PeopleById';
+export { default as Planets } from './Planets';
+export { default as PlanetsById } from './Planets/PlanetsById';
+export { default as Species } from './Species';
+export { default as SpeciesById } from './Species/SpeciesById';
+export { default as Vehicles } from './Vehicles';
+export { default as VehiclesById } from './Vehicles/VehiclesById';
+export { default as Starships } from './Starships';
+export { default as StarshipsById } from './Starships/StarshipsById';

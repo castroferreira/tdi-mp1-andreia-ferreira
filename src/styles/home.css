@@ -1,0 +1,34 @@
+@import "./geral.css";
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .div{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .div{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
