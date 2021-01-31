@@ -8,10 +8,11 @@ const PlanetsById = () => {
         justifyContent: 'center',
         alignItems: 'center',
         height: '90vh',
-        fontFamily: 'Star Jedi'
+        fontFamily: 'Star Jedi',
+        backgroundColor: '#17182f'
       }}
     >
-      <h1>Planets by id</h1>
+      <h1 className="maintitle">Planets by id</h1>
     </div>
   );
 };

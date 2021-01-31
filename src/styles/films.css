@@ -1,0 +1,21 @@
+@import "./geral.css";
+
+h1{
+    font-size: 65px;
+    position: absolute;
+    padding-top: 0px;
+}
+
+.title p{
+    font-size: 20px;
+    color: #dba90d;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 30px;
+        top: 100px;
+    }
+}

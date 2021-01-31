@@ -8,10 +8,11 @@ const People = () => {
         justifyContent: 'center',
         alignItems: 'center',
         height: '90vh',
-        fontFamily: 'Star Jedi'
+        fontFamily: 'Star Jedi',
+        backgroundColor: '#17182f'
       }}
     >
-      <h1>People</h1>
+      <h1 className="maintitle">People</h1>
     </div>
   );
 };

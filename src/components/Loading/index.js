@@ -18,10 +18,10 @@ margin-right:auto;
 margin-top:0;
 vertical-align:middle
 `
-
+ //fazer padding bottom e top
 
 function Loading() {
-    return (
+    return ( 
         <Container className="text-center">
                         <div className="bb-8">
                             <div className="bb-8__head">

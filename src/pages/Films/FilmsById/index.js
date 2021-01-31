@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getFilmsById } from "../../../api/index";
 import Loading from '../../../components/Loading';
-/* import '../../../styles/films.css';
- */
+import '../../../styles/films.css';
+
 
 const FilmsById = (props) => {
 
@@ -30,10 +30,18 @@ const FilmsById = (props) => {
               justifyContent: 'center',
               alignItems: 'center',
               height: '90vh',
-              fontFamily: 'Star Jedi'
+              fontFamily: 'Star Jedi',
+              backgroundColor: '#17182f'
             }}
           >
-            <h1>Films by id</h1>
+            <h1 className="maintitle">Films by id</h1>
+
+            <div className="info">
+              <div className="title-film">
+                {console.log(film)}
+                <p className="title"><b>{film.title}</b></p>
+              </div>
+            </div>
           </div>
       }
     </>

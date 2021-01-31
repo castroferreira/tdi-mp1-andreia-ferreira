@@ -35,7 +35,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-4 col-xs-12 text-center">
+                <div className="col-md-4 col-xs-12 mx-auto">
                     <p className="text-footer">Andreia de Castro Ferreira | <b style={{ color: '#dba90d' }}>65791</b></p>
                 </div>
             </div>

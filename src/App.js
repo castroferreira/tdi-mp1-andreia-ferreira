@@ -1,7 +1,6 @@
 import './styles/geral.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Background from './components/Background';
 import Navbar from './components/Navbar/';
 import Footer from './components/Footer/';
 import Home from './pages/Home';
@@ -23,22 +22,21 @@ export default function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/films' exact component={Films} />
-        <Route path='/films/:id/' exact component={FilmsById} />
-        <Route path='/people' exact component={People} />
-        <Route path='/people/:id/' exact component={PeopleById} />
-        <Route path='/planets' exact component={Planets} />
-        <Route path='/planets/:id/' exact component={PlanetsById} />
-        <Route path='/species' exact component={Species} />
-        <Route path='/species/:id/' exact component={SpeciesById} />
-        <Route path='/vehicles' exact component={Vehicles} />
-        <Route path='/vehicles/:id/' exact component={VehiclesById} />
-        <Route path='/starships' exact component={Starships} />
-        <Route path='/starships/:id/' exact component={StarshipsById} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/films' component={Films} />
+        <Route exact path='/films/:id' component={FilmsById} />
+        <Route exact path='/people' component={People} />
+        <Route exact path='/people/:id' component={PeopleById} />
+        <Route exact path='/planets' component={Planets} />
+        <Route exact path='/planets/:id' component={PlanetsById} />
+        <Route exact path='/species' component={Species} />
+        <Route exact path='/species/:id' component={SpeciesById} />
+        <Route exact path='/vehicles' component={Vehicles} />
+        <Route exact path='/vehicles/:id' component={VehiclesById} />
+        <Route exact path='/starships' component={Starships} />
+        <Route exact path='/starships/:id' component={StarshipsById} />
       </Switch>
-      <Footer />
-      <Background />
+      <Footer />     
     </Router>
   );
 }

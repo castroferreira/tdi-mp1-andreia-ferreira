@@ -8,10 +8,11 @@ const Starships = () => {
         justifyContent: 'center',
         alignItems: 'center',
         height: '90vh',
-        fontFamily: 'Star Jedi'
+        fontFamily: 'Star Jedi',
+        backgroundColor: '#17182f'
       }}
     >
-      <h1>Starships</h1>
+      <h1 className="maintitle">Starships</h1>
     </div>
   );
 };

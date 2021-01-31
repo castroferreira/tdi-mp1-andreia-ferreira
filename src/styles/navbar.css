@@ -16,7 +16,7 @@
 .navLink{
     color: #dba90d;
 }
-.navLink :hover {
+.navLink:hover {
     color: white !important;
 }
 
