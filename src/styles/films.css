@@ -11,11 +11,125 @@ h1{
     color: #dba90d;
 }
 
+.cards {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
 
+.card {
+  border: none;
+      transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+      background-color: #101122;
+      width: 100%;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+  
+  }
+  .card:hover {
+      box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+      transform: scale(1.05, 1.05);
+  }
+  
+  .card__info {
+      z-index: 2;
+      background-color: #101122;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      padding: 16px 24px 24px 24px;
+  }
+  
+  .card__title {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-family: 'Star Jedi';
+      font-size: 15px;
+      color: #dba90d;
+  }
+  
+  .card__by {
+      font-size: 10px;
+      font-family: Arial;
+      font-weight: 300;
+      color: #fff;
+      padding-left: 24px;
+      padding-bottom: 24px;
+      padding-top: 10px;
+  }
+  
+  .card__author {
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none !important;      
+  }
+  
+  .card__date {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+  .card__author:hover {
+  
+      color: rgb(204, 203, 203);
+  }
+
+  .cards {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding: 0;
+    background-color: #17182f !important;
+}
+.cards__item {
+    display: -webkit-box;
+    display: flex;
+    padding: 1rem;
+    background-color: #17182f;
+}
+.fundo-cards{
+  background-color: #17182f;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+      width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+      width: 25%;
+  }
+}
+@media (max-width: 1050px) {
+  .cards__item {
+      width: 50%;
+  }
+}
 
 @media screen and (max-width: 600px) {
     h1{
         font-size: 30px;
         top: 100px;
     }
+
+    .cards__item {
+      width: 100%;
+  }
+
+
 }

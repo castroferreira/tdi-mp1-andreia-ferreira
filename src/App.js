@@ -36,7 +36,7 @@ export default function App() {
         <Route exact path='/starships' component={Starships} />
         <Route exact path='/starships/:id' component={StarshipsById} />
       </Switch>
-      <Footer />     
+      <Footer />   
     </Router>
   );
 }

@@ -38,7 +38,6 @@ const FilmsById = (props) => {
 
             <div className="info">
               <div className="title-film">
-                {console.log(film)}
                 <p className="title"><b>{film.title}</b></p>
               </div>
             </div>
